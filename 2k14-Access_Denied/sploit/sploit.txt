@@ -1,0 +1,1 @@
+curl --referer "http://host:port/path/to/index.php" --data "a=2" "http://host:port/path/to/admin.php"
