@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Freckles sharing site">
+  <meta name="author" content="Pamela Lillian Isley">
+  <title>WTF! So Standard!</title>
+  <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="container">
+    <div>
+      <div class="text-center">
+        <h2>WTF! So Standard Admin!</h2>
+        <div class="alert alert-success">
+          Congrats on logging in with your credentials.
+        </div>
+        <h3>List of numerous items</h3>
+      </div>
+      <div class="col-lg-12">
+        <table class="table table-striped">
+        {% for d in data %}
+          <tr>
+            <td>{{d[0]}}</td>
+            <td>{{d[1]}}</td>
+          </tr>
+        {% endfor %}
+        </table>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="text-right col-lg-12">
+        Should you encounter a problem, please contact <a href="mailto:root@localhost">nobody</a>.
+      </div>
+    </footer>
+  </div> <!-- /container -->
+</body>
+</html>

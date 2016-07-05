@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Freckles sharing site">
+  <meta name="author" content="Pamela Lillian Isley">
+  <title>WTF! So Standard!</title>
+  <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="container">
+    <div class="text-center">
+      <h2>WTF! So Standard!</h2>
+      {% if msg %}
+      <div class="alert alert-danger">
+        <strong>{{msg}}</strong>
+      </div>
+      {% endif %}
+      <p>
+      <div class="alert alert-warning">
+        This demo site is <strong>temporary</strong>. Use demo:demo to log in.
+      </div>
+      <p>
+      <form role="form" class="form-block" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label><span>Login: </span>
+          <input class="form-control" type="text" placeholder="login" name="login" />
+          </label>
+          <label><span>Password: </span>
+          <input class="form-control" type="password" placeholder="password" name="password" />
+          </label>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="btn btn-default" role="button" value="Log in" />
+        </div>
+      </form>
+      </p>
+    </div>
+    <footer class="footer">
+      <div class="text-right col-lg-12">
+        Should you encounter a problem, please contact <a href="mailto:root@localhost">nobody</a>.
+      </div>
+    </footer>
+  </div> <!-- /container -->
+</body>
+</html>
