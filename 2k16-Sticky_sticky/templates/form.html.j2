@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Freckles sharing site">
+  <meta name="author" content="Pamela Lillian Isley">
+  <title>Sticky! Sticky!</title>
+  <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="container">
+    <div class="text-center">
+      <h2>Sticky! Sticky!</h2>
+      {% if msg %}
+      <div class="alert alert-danger">
+        <strong>{{msg}}</strong>
+      </div>
+      {% endif %}
+      <p>
+
+      {% if user %}
+      <div class="alert alert-success">
+        <strong>Welcome back, {{user}}!</strong>
+      </div>
+      {% else %}
+      <div class="alert alert-info">
+        <strong>Hey there! Tell me who you are to access some content</strong>
+      </div>
+
+      <p>
+      <form role="form" class="form-block" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label><span>Username: </span>
+          <input class="form-control" type="text" placeholder="name" name="name" />
+          </label>
+        </div>
+        <div class="form-group">
+          <input type="submit" class="btn btn-default" role="button" value="Log in" />
+        </div>
+      </form>
+      </p>
+      {% endif %}
+    </div>
+    <footer class="footer">
+      <div class="text-right col-lg-12">
+        Should you encounter a problem, please contact <a href="mailto:root@localhost">nobody</a>.
+      </div>
+    </footer>
+  </div> <!-- /container -->
+</body>
+</html>
