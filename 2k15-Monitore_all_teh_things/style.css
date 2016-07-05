@@ -1,0 +1,28 @@
+/* Generic Selectors */
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 14px
+    color: #333333
+    background-color: #F9F9F9
+}
+
+p {
+    width: 80%;
+}
+
+h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+h2 {
+    font-weight: bold;
+    color: #FF0000;
+}
+
+#container{
+    margin:40px auto;
+    width:200px;
+}
